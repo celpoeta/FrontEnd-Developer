@@ -8,19 +8,20 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;400;600;700;900&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;400;600;700;900&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
     <title>Image</title>
 </head>
 
 <body>
-
     <header>
         <a href="/">
             <figure>
                 <img src="./img/tienda_en_linea/logo-bissu-c.png" alt="Logo Bissu">
             </figure>
         </a>
-        <nav class="">
+        <nav>
             <a href="#">Inicio</a>
             <a href="#">Brochas</a>
             <a href="#">Lapiz Labial</a>
@@ -29,24 +30,27 @@
     <main>
         <section>
             <h1>Compras en linea mi maquillaje</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quod velit soluta facere labore
+            <p class="parrafo-bienvenida">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quod
+                velit soluta facere labore
                 porro quia neque nobis ducimus nam ipsa corporis, eligendi exercitationem pariatur repudiandae iste
                 sequi consequuntur <b>fuga!</b></p>
         </section>
         <section>
             <h2>Productos destacados</h2>
-            <article>
+            <article class="producto">
                 <figure>
-                    <img src="./img/tienda_en_linea/productos/brochas.jpg" alt="brochas suaves"
+                    <img class="producto-img" src="./img/tienda_en_linea/productos/brochas.jpg" alt="brochas suaves"
                         srcset="./img/tienda_en_linea/productos/brochas-v-350.jpg 360w, ./img/tienda_en_linea/productos/brochas.jpg 600w"
                         sizes="(max-width: 640px) 100vw, 640px">
                 </figure>
-                <h3>Brochas profesionales</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <h4>Precio: 40USD</h4>
-                <span>Cantidad: 10</span><br>
-                <a href="./brochas.html">Ver más</a>
-                <button>agregar al carrito</button>
+                <div class="producto-informacion">
+                    <h3>Brochas profesionales</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Precio: 40USD</p>
+                    <span>Cantidad: 10</span><br>
+                    <a href="./brochas.html">Ver más</a>
+                    <button>agregar al carrito</button>
+                </div>
             </article>
             <article>
                 <figure>
@@ -64,7 +68,12 @@
         </section>
     </main>
     <footer>
-
+        <nav>
+            <a href="#">Conoce más</a>
+            <a href="#">Nuestros productos</a>
+            <a href="#">Lapiz Labial</a>
+        </nav>
+        <p>hecho por unitec ❤️</p>
     </footer>
 </body>
 

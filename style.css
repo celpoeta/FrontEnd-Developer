@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing:border-box;
 }
 
 body {
@@ -8,17 +9,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: "Lato", sans-serif;
 }
 
 h1 {
-    font-family: "Lato", sans-serif;
     font-weight: 900;
     font-style: normal;
     margin: 0.5em 0;
 }
 
 h2 {
-    font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;
     margin: 0.5em 0;
@@ -28,7 +28,6 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
     margin: 0.5em 0;
@@ -38,17 +37,60 @@ header{
     background: black;
     width: 100%;
     text-align: center;
+    padding: 10px 20px;
 }
 
-section {
-    margin: 30px 0;
-}
-
-p{
-    max-width: 400px;
-}
-
-a[href="#"]{
+header nav a {
     color: white;
     text-decoration: none;
+    transition: .5s;
+}
+
+header nav a:hover{
+    color:yellow;
+    text-decoration: underline;
+}
+
+main{
+    width: 100%;
+    max-width: 800px;
+}
+
+section{
+    margin: 0 1rem;
+}
+
+footer{
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.parrafo-bienvenida{
+    color: brown;
+    font-size: medium;
+    width: 600px;
+    border-left: 3px solid black;
+    padding-left: 10px;
+    
+}
+
+.producto{
+    border-color: #3e3e3e;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 1rem;
+    background-color: white;
+    overflow: hidden;
+}
+
+.producto-img{
+    width: 100%;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.producto-informacion{
+    margin:0 2rem 2rem;
 }
