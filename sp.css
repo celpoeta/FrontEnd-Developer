@@ -2,6 +2,16 @@ body{
     background-color: antiquewhite;
 }
 
+
+#id-element{
+    color:#8a2be2   
+}
+
 .parrafo{
+   color: yellow;
+}
+
+.conteiner .parrafo #id-element{
     color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
