@@ -4,14 +4,21 @@ body{
 
 
 #id-element{
-    color:#8a2be2   
+    background-color:#8a2be2;   
 }
 
 .parrafo{
-   color: yellow;
+   background-color: yellow;
+   color: white;
 }
 
-.conteiner .parrafo #id-element{
-    color: black;
+.conteiner .parrafo#id-element{
+    background-color: red;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.conteiner .parrafo #id-element {
+    background-color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
