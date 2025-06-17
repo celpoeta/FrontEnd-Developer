@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Galería de Gatitos</title>
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            padding: 1rem;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-auto-rows: 250px;
+            gap: 10px;
+        }
+
+        .galeria-item {
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .galeria-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px #00000033;
+        }
+
+        .galeria-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Estilos para celdas irregulares */
+        .item1 {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .item2 {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+
+        .item3 {
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+
+        .item4 {
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+
+        .item5 {
+            grid-column: span 3;
+            grid-row: span 2;
+        }
+    </style>
+    </head>
+
+    <body>
+        <h1 style="text-align:center; margin-bottom: 1rem;">Galería de Gatitos
+            🐱</h1>
+        <p></p>
+        <div class="galeria">
+            <div class="galeria-item item1"><img
+                    src="./img/css_grid/pexels-pixabay-45201.jpg"
+                    alt="Gatito blanco de ojos azules"></div>
+            <div class="galeria-item item2"><img
+                    src="./img/css_grid/pexels-pixabay-104827.jpg"
+                    alt="Gatito gris con blanco"></div>
+            <div class="galeria-item item3"><img
+                    src="./img/css_grid/pexels-katarzyna-modrzejewska-495044-1314550.jpg"
+                    alt="Gatito King"></div>
+            <div class="galeria-item item4"><img
+                    src="./img/css_grid/pexels-francesco-ungaro-96938.jpg"
+                    alt="Gatito en tierno"></div>
+            <div class="galeria-item item5"><img
+                    src="./img/css_grid/pexels-francesco-ungaro-193255.jpg"
+                    alt="Gatitos dandose cariño"></div>
+            <div class="galeria-item item2"><img
+                    src="./img/css_grid/pexels-didsss-1302290.jpg"
+                    alt="Gatito blanco con un ojo azul y otro amarillo"></div>
+            <div class="galeria-item item2"><img
+                    src="./img/css_grid/pexels-ingewallu-126407.jpg"
+                    alt="Gatito viendo fijamente"></div>
+            <div class="galeria-item item2"><img
+                    src="./img/css_grid/pexels-amir-1183434.jpg"
+                    alt="Gatito riendose"></div>
+        </div>
+    </body>
+
+</html>

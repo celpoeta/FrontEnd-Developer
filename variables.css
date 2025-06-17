@@ -1,0 +1,23 @@
+:root{
+    --primary-color: #ed94e8;
+    --secondary-color: #5db7ee;
+    --font-family: 'Arial', sans-serif;
+    --font-size-sm: 18px;
+    --font-size-md: 20px;
+    --line-height: 1.5;
+}
+
+
+body{
+    background-color: black;
+    color: white;
+}
+
+h1{
+    color: var(--primary-color);
+}
+
+p{
+    color: var(--secondary-color);
+    font-size: var(--font-size-sm);
+}

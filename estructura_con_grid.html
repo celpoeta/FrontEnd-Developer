@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Layout con CSS Grid</title>
+        <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      background: #1e1e1e;
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 10px;
+      padding: 20px;
+    }
+
+    header,
+    footer {
+      background-color: #2c2f33;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 10px;
+    }
+
+    aside,
+    section {
+      background-color: #2c2f33;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+
+      aside,
+      section {
+        width: 100%;
+      }
+    }
+  </style>
+    </head>
+    <body>
+        <header>Header</header>
+
+        <main>
+            <aside>Sidebar</aside>
+            <section>Content</section>
+        </main>
+
+        <footer>Footer</footer>
+    </body>
+</html>
