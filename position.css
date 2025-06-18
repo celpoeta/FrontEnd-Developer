@@ -1,0 +1,104 @@
+.container {
+    background-color: aliceblue;
+    align-content: center;
+    text-align: center;
+}
+
+div {
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Position relative  */
+.r1 {
+    background: darkgoldenrod;
+    border: 2px solid black;
+    width: 100px;
+    height: 50px;
+}
+
+.r2 {
+    background: darkcyan;
+    border: 2px solid black;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    top: -25px;
+    left: 50px;
+
+}
+
+/* end positon relative */
+
+/* Position absolute  */
+.contenedor-a {
+    border-color: darkcyan;
+    border-style: solid;
+    height: 200px;
+    width: 300px;
+    margin: auto;
+    align-content: center;
+    position: relative;
+}
+
+.contenedor-b {
+    border-color: lightgreen;
+    border-style: solid;
+    height: 150px;
+    width: 250px;
+}
+
+.absoluto {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: tomato;
+    color: white;
+    border-radius: 4px;
+}
+
+/* end positon absolute */
+
+/* Position fixed */
+.fijo {
+    position: fixed;
+    right: 20px;
+    background-color: darkslateblue;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.contenido-largo {
+    height: 1000px;
+    padding: 20px;
+    background: lightgray;
+}
+
+/* end position fixed */
+
+/* Position sticky */
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: #ff9800;
+    border-bottom: 2px solid #333;
+}
+
+.bloque {
+    padding: 1rem;
+}
+
+.bloque p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    height: 300px;
+}
+
+/* end position sticky */

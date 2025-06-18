@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Positions in CSS</title>
+        <link rel="stylesheet" href="position.css">
+    </head>
+    <body>
+        <main>
+            <h1>Positions</h1>
+            <section class="container">
+                <h2>Position:relative</h2>
+                <div class="r1"></div>
+                <div class="r2"></div>
+            </section>
+            <section class="container">
+                <h2>Position:absolute</h2>
+                <div class="contenedor-a">
+                    <div class="contenedor-b">
+                        <div class="absoluto"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="container relative">
+                <h2>Position:fixed</h1>
+                <div class="fijo">
+                    🔔 Notificación fija
+                </div>
+                <div class="contenido-largo">
+                    <p>Desplázate para ver cómo el elemento se queda fijo.</p>
+                </div>
+            </section>
+            <section class="container">
+                <h2>Position:sticky</h2>
+                <h3 class="sticky">⏱️ Título 1 - Información General</h3>
+                <div class="bloque">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit.</p>
+                    <p>Maecenas lacinia, justo nec...</p>
+                    <p>Contenido largo para que puedas hacer scroll...</p>
+                    <p>Otro párrafo más.</p>
+                    <p>Y otro más...</p>
+                </div>
+
+                <h3 class="sticky">⌨️ Título 2 - Detalles Adicionales</h3>
+                <div class="bloque">
+                    <p>Aquí comienza otra sección de contenido.</p>
+                    <p>Más información detallada sobre la segunda parte.</p>
+                    <p>Scroll para ver el comportamiento sticky.</p>
+                    <p>Continúa bajando...</p>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
