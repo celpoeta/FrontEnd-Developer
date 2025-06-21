@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes con Unidades Correctas</title>
+    <style>
+    :root {
+      font-size: 62.5%; /* base para rem */
+    }
+
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem; /* Se adapta a la raíz, accesible */
+      margin-bottom: 0.5rem;
+    }
+
+    .hero {
+      height: 100vh; /* Sección de pantalla completa */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(#4caf50, #81c784);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .tarjeta {
+      background-color: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      max-width: 400px;
+      margin: 2rem auto;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* px da precisión visual */
+    }
+
+    .tarjeta img {
+      width: 100%; /* Relativo al contenedor */
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .tarjeta h2 {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .tarjeta p {
+      font-size: 1rem;
+      color: #444;
+    }
+
+    .boton {
+      display: inline-block;
+      padding: 0.10 1.5em; /* Basado en fuente del botón */
+      font-size: 1rem;
+      background-color: #2c3e50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    .boton:hover {
+      background-color: #1a252f;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+  </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>Unidades en CSS con Buenas Prácticas</h1>
+      <p style="font-size: 1rem;">Aprende a usarlas correctamente en tus
+        componentes</p>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h2 style="font-size: 2rem;">Sección Hero 100vh</h2>
+          <p style="font-size: 1.2rem;">Ideal para portadas y
+            bienvenida.</p>
+        </div>
+      </section>
+
+      <section class="tarjeta">
+        <img src="./img/css_grid/pexels-ingewallu-126407.jpg"
+          alt="Gatito acostado">
+        <h2>Tarjeta con `rem`, `px` y `%`</h2>
+        <p>El padding y sombras usan <strong>px</strong> para precisión.
+          Tipografía con <strong>rem</strong>. Imagen responsiva con
+          <strong>%</strong>.</p>
+        <button class="boton">Ver más</button>
+      </section>
+    </main>
+
+    <footer>
+      <p style="font-size: 0.9rem;">© 2025 Diseño Responsivo con CSS</p>
+    </footer>
+
+  </body>
+</html>
